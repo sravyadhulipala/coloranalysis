@@ -10,7 +10,7 @@ setuptools.setup(
     author_email="shravs.15feb@gmail.com",
     name='coloranalysis',
     license="MIT",
-    description='coloranalysis is a package for calculating area of a color provided the HEX code of a color.',
+    description='coloranalysis is a package for calculating area of one or more colors in an image, provided the HEX codes.',
     version='v0.0.3',
     long_description=README,
     url='https://github.com/sravyadhulipala/coloranalysis',
