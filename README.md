@@ -36,6 +36,7 @@ from coloranalysis.colors import colorAreas
 The percentage of area is given by the method getArea, of class colorAreas.
 
 **getArea()** 
+
 *returns* a list of the percentages of area covered by the given colors.
 takes three arguments: hexColours (*yes, colour with a 'u' here, we're Indian*), path and diff.
 - **hexColours**: A list of strings representing the HEX codes.
