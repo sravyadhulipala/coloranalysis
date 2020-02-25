@@ -17,7 +17,7 @@ pip install coloranalysis
 
 ### **Usage**
 
-See [this notebook]() for an example program on how to use this package. However, reading this document entirely is recommended.
+See [this notebook](https://github.com/sravyadhulipala/coloranalysis/blob/master/example/colorAreasExample.ipynb) for an example program on how to use this package. However, reading this document entirely is recommended.
 
 Let us consider this image of a rainbow. 
 
