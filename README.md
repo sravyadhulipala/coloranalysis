@@ -37,13 +37,12 @@ The percentage of area is given by the method getArea, of class colorAreas.
 
 **getArea()** 
 
-*returns* a list of the percentages of area covered by the given colors.
-takes three arguments: hexColours (*yes, colour with a 'u' here, we're Indian*), path and diff.
+*arguments* are hexColours (*yes, colour with a 'u' here, we're Indian*), path and diff.
 - **hexColours**: A list of strings representing the HEX codes.
 - **path**: A string specifying the path of the image.
 - **diff**: An integer to determine the lower and upper boundaries of the given colors, in the HSV color space.
 
-
+*returns* a list of the percentages of area covered by the given colors.
 
 For a digital image as above, the recommended *diff* value is 10. While the recommended *diff* value for images of real-life objects is 30-50. 
 For more information on HSV color space, [see this.](https://www.lifewire.com/what-is-hsv-in-design-1078068)
