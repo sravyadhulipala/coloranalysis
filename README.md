@@ -16,4 +16,4 @@ pip install coloranalysis
 ```
 
 ### **Usage**
-![](https://github.com/sravyadhulipala/coloranalysis/blob/master/coloranalysis/IPTestRainbow.jpg){:height="50%" width="50%"}
+![](https://github.com/sravyadhulipala/coloranalysis/blob/master/coloranalysis/IPTestRainbow.jpg&s=30)
