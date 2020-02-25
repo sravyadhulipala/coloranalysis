@@ -45,4 +45,4 @@ The percentage of area is given by the method getArea, of class colorAreas.
 *returns* a list of the percentages of area covered by the given colors.
 
 For a digital image as above, the recommended *diff* value is 10. While the recommended *diff* value for images of real-life objects is 30-50. 
-For more information on HSV color space, [see this.](https://www.lifewire.com/what-is-hsv-in-design-1078068)
+For more information on HSV color space, see [this link.](https://www.lifewire.com/what-is-hsv-in-design-1078068)
