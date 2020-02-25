@@ -31,11 +31,11 @@ Import colorArea, the class that calculates the area of the colors we want, as f
 ```
 from coloranalysis.colors import colorAreas
 ```
-**colorAreas takes no arguments.**
-
-The percentage of area is given by the method getArea, of class colorAreas.
+*colorAreas takes no arguments.*
 
 **getArea()** 
+
+The percentage of area is given by the method getArea, of class colorAreas.
 
 *arguments* hexColours (*yes, colour with a 'u' here, we're Indian*), path and diff.
 - **hexColours**: A list of strings representing the HEX codes.
