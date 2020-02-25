@@ -16,7 +16,8 @@ pip install coloranalysis
 ```
 
 ### **Usage**
-Let us consider the following image of a rainbow. 
+Let us consider this image of a rainbow. 
+
 <img src=https://github.com/sravyadhulipala/coloranalysis/blob/master/coloranalysis/IPTestRainbow.jpg width="400" height="200">
 
 <you like to know the area of red color in the image, or the area of all the colors>
