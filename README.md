@@ -46,7 +46,7 @@ from coloranalysis.colors import colorAreas
 *hexColours - colour with a 'u'*
 
 For a digital image as above, the recommended *diff* value is 10. While the recommended *diff* value for images of real-life objects is 30-50. 
-For more information on HSV color space, see [this link.](https://www.lifewire.com/what-is-hsv-in-design-1078068)
+For more information on HSV color space, see [this link.](https://www.linuxtopia.org/online_books/graphics_tools/gimp_advanced_guide/gimp_guide_node51.html)
 
 **detectColor**
 
