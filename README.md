@@ -16,7 +16,6 @@ pip install coloranalysis
 ```
 
 ### **Usage**
-See [this notebook.]()
 Let us consider this image of a rainbow. 
 
 <img src=https://github.com/sravyadhulipala/coloranalysis/blob/master/coloranalysis/IPTestRainbow.jpg width="400" height="200">
@@ -32,3 +31,5 @@ The percentage of area is given by the method getArea, of class colorAreas.
 **getArea()** takes three arguments: hexColours (yes, colour with a 'u'), path and diff.
 - **hexColours**: A list of strings representing the HEX codes.
 - 
+
+See [this notebook]() for an example.
