@@ -16,4 +16,4 @@ pip install coloranalysis
 ```
 
 ### **Usage**
-![](https://github.com/sravyadhulipala/coloranalysis/blob/master/coloranalysis/IPTestRainbow.jpg&s=30)
+![](https://github.com/sravyadhulipala/coloranalysis/blob/master/coloranalysis/IPTestRainbow.jpg &s=30)
