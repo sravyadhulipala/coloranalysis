@@ -54,8 +54,8 @@ For more information on HSV color space, see [this link.](https://www.linuxtopia
 
 *arguments*
 - **colour**: Values of the color in HSV color space, in the range H[0-360], S[0-100], V[0-100]
-- **img**:
-- **hsv_img**: 
+- **img**: A numpy array returned by cv2.imread()
+- **hsv_img**: A numpy array returned by cv2.cvtColor()
 - **diff**: An integer to determine the lower and upper boundaries of the given colors, in the HSV color space.
 
 *colour - colour with a 'u'*
