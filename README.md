@@ -2,7 +2,6 @@
 coloranalysis is a python package for calculating area of one or more colors in an image.
 
 ### **Prerequisites**
-
 Numpy, Opencv and Matplotlib are required to execute coloranalysis, you can download them using the following commands:
 ```
 pip install numpy
@@ -15,3 +14,6 @@ You can either clone or download this repository, or use this command:
 ```
 pip install coloranalysis
 ```
+
+### **Usage**
+![Image description](link-to-image)
