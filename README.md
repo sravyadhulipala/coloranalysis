@@ -21,7 +21,7 @@ See [this notebook]() for an example program on how to use this package. However
 
 Let us consider this image of a rainbow. 
 
-<img src=https://github.com/sravyadhulipala/coloranalysis/blob/master/coloranalysis/IPTestRainbow.jpg width="400" height="200">
+<img src=https://github.com/sravyadhulipala/coloranalysis/blob/master/example/IPTestRainbow.jpg width="400" height="200">
 
 To know the area covered by red color, or the area covered by multiple colors in the image, we should get the HEX codes using a [colorpicker.](https://imagecolorpicker.com/)
 
