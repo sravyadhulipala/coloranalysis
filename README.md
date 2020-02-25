@@ -22,14 +22,24 @@ Let us consider this image of a rainbow.
 
 To know the area covered by red color, or the area covered by multiple colors in the image, we should get the HEX codes using a [colorpicker.](https://imagecolorpicker.com/)
 
+In the above image, HEX codes of all colors are: ["#FE0000", "#FD6400", "#FFFF02", "#008101", "#0000FE", "#4B0081", "#BC31FD"]
+
 Import colorArea, the class that calculates the area of the colors we want, as follows. 
 ```
 from coloranalysis.colors import colorAreas
 ```
 **colorAreas takes no arguments.**
+
 The percentage of area is given by the method getArea, of class colorAreas.
-**getArea()** takes three arguments: hexColours (yes, colour with a 'u'), path and diff.
+
+**getArea()** takes three arguments: hexColours (yes, colour with a 'u', we're Indian), path and diff.
 - **hexColours**: A list of strings representing the HEX codes.
-- 
+- **path**: A string specifying the path of the image.
+- **diff**: An integer to determine the lower and upper HSV boundaries of the given colors.
+
+
+For a digital image as above, the recommended diff value is 10. While the recommended diff value for images of real-life objects is 30-50.
+For more information on HSV, [see this.]()
+
 
 See [this notebook]() for an example.
