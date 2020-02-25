@@ -1,7 +1,7 @@
-###**coloranalysis**
+### **coloranalysis**
 coloranalysis is a python package for calculating area of one or more colors in an image.
 
-#**Prerequisites**:
+# **Prerequisites**:
 
 The following python packages are required to execute coloranalysis.
 **numpy**
