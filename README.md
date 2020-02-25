@@ -37,7 +37,8 @@ from coloranalysis.colors import colorAreas
 
 *returns* a list of the percentages of area covered by the given colors.
 
-*arguments* hexColours (*yes, colour with a 'u' here*), path and diff.
+*arguments* 
+hexColours (*yes, colour with a 'u' here*), path and diff.
 - **hexColours**: A list of strings representing the HEX codes.
 - **path**: A string specifying the path of the image.
 - **diff**: An integer to determine the lower and upper boundaries of the given colors, in the HSV color space.
