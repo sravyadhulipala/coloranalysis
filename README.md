@@ -1,5 +1,5 @@
 # **coloranalysis**
-coloranalysis is a python package for calculating the area of one or more colors in an image.
+coloranalysis is a python package for calculating the percentage of area covered by one or more colors in an image.
 
 ### **Prerequisites**
 numpy, opencv and matplotlib are required to execute coloranalysis, you can download them using the following commands:
@@ -16,9 +16,19 @@ pip install coloranalysis
 ```
 
 ### **Usage**
+See [this notebook.]()
 Let us consider this image of a rainbow. 
 
 <img src=https://github.com/sravyadhulipala/coloranalysis/blob/master/coloranalysis/IPTestRainbow.jpg width="400" height="200">
 
-<you like to know the area of red color in the image, or the area of all the colors>
-Get the HEX codes of the colors you want in the image using a [colorpicker.](https://imagecolorpicker.com/)
+To know the area covered by red color, or the area covered by multiple colors in the image, we should get the HEX codes using a [colorpicker.](https://imagecolorpicker.com/)
+
+Import colorArea, the class that calculates the area of the colors we want, as follows. 
+```
+from coloranalysis.colors import colorAreas
+```
+**colorAreas takes no arguments.**
+The percentage of area is given by the method getArea, of class colorAreas.
+**getArea()** takes three arguments: hexColours (yes, colour with a 'u'), path and diff.
+- **hexColours**: A list of strings representing the HEX codes.
+- 
