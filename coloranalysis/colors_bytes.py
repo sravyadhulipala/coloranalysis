@@ -61,5 +61,5 @@ class colorAreas:
             img = base64.b64encode(f.read())
         os.remove("thermal.png")
         os.remove("imageToSave.png")
-        results = ratio + [img]
-        return (results)
+        
+        return img
