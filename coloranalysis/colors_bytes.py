@@ -58,8 +58,8 @@ class colorAreas:
             colour_rgb[i][j] /= 255
         plt.imsave("thermal.png", masks, cmap = "YlOrRd")
         with open("thermal.png", "rb") as f:
-            img = base64.b64encode(f.read())
+            img_mask = base64.b64encode(f.read())
         os.remove("thermal.png")
         os.remove("imageToSave.png")
         
-        return img
+        return img_mask
