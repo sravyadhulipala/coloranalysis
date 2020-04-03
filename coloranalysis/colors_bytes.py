@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import colors
 from matplotlib.colors import rgb_to_hsv
+import urllib.request
+import io
 
 class colorAreas:
     
@@ -44,10 +46,25 @@ class colorAreas:
         hsv_img = cv.cvtColor(img, cv.COLOR_RGB2HSV) #converting the colorspace from RGB to HSV
         colours, colour_rgb = self.convertHEXColours(hexColours)
         ratio = []
+        masks = np.zeros(210*325).reshape(210,325)
         for i in range(len(colours)):
-            mask,result = self.detectColor(colours[i],img,hsv_img,diff) 
+            mask, result = self.detectColor(colours[i],img,hsv_img,diff) 
             size = mask.shape
             pixels = 100*cv.countNonZero(mask)/(size[0]*size[1]) #ratio of a color = size of masked pixels/ actual size of mask
             ratio.append(pixels)
+            masks = np.add(mask, masks)
+            for m in range(210):
+                for n in range(325):
+                    if masks[m][n] == 3*255:
+                        masks[m][n] -= 255
+                    else:
+                        continue
+                            
+        for j in range(len(colour_rgb[i])):
+            colour_rgb[i][j] /= 255
+        plt.imsave("thermal.png", masks, cmap = "YlOrRd")
+        with open("thermal.png", "rb") as f:
+            img = base64.b64encode(f.read())
+        os.remove("thermal.png")
         os.remove("imageToSave.png")
-        return ratio
+        return (ratio, img)
