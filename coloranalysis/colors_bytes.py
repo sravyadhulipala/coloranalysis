@@ -53,12 +53,6 @@ class colorAreas:
             pixels = 100*cv.countNonZero(mask)/(size[0]*size[1]) #ratio of a color = size of masked pixels/ actual size of mask
             ratio.append(pixels)
             masks = np.add(mask, masks)
-            for m in range(210):
-                for n in range(325):
-                    if masks[m][n] == 3*255:
-                        masks[m][n] -= 255
-                    else:
-                        continue
                             
         for j in range(len(colour_rgb[i])):
             colour_rgb[i][j] /= 255
@@ -67,4 +61,5 @@ class colorAreas:
             img = base64.b64encode(f.read())
         os.remove("thermal.png")
         os.remove("imageToSave.png")
-        return (ratio, img)
+        results = ratio + [img]
+        return (results)
