@@ -53,13 +53,13 @@ class colorAreas:
             pixels = 100*cv.countNonZero(mask)/(size[0]*size[1]) #ratio of a color = size of masked pixels/ actual size of mask
             ratio.append(pixels)
             masks = np.add(mask, masks)
-                            
         for j in range(len(colour_rgb[i])):
             colour_rgb[i][j] /= 255
         plt.imsave("thermal.png", masks, cmap = "YlOrRd")
         with open("thermal.png", "rb") as f:
             img_mask = base64.b64encode(f.read())
+            mask_img = img_mask.decode('utf-8')
         os.remove("thermal.png")
         os.remove("imageToSave.png")
-        
-        return img_mask
+
+        return mask_img
